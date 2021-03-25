@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegPage"
+    android:background="#fff"
+    android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/regtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee_regular"
+        android:text="REGISTRATION FORM"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#aeaeae"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imagereg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/img"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/regtxt"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:id="@+id/nametxt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click on the logo to select image"
+        android:fontFamily="@font/bungee_regular"
+        android:textColor="#aeaeae"
+        android:textSize="14sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imagereg"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+         />
+        </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="20dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/barcodeedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="BarcodeID"
+            app:startIconDrawable="@drawable/barcode"
+            app:startIconTint="@color/colorPrimaryDark"
+            android:layout_marginBottom="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/nameedit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            app:counterEnabled="true"
+            app:counterMaxLength="20"
+            app:startIconDrawable="@drawable/profile"
+            app:startIconTint="@color/colorPrimaryDark"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/idedit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="StudentID"
+            app:startIconDrawable="@drawable/id_icon"
+            app:startIconTint="@color/colorPrimaryDark"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cgedit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cgpa"
+            app:startIconDrawable="@drawable/cg_icon"
+            app:startIconTint="@color/colorPrimaryDark"
+            android:layout_marginBottom="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dspin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select your department"
+            app:endIconMode="dropdown_menu"
+            app:startIconDrawable="@drawable/department"
+            app:startIconTint="@color/colorPrimaryDark"
+            android:layout_marginBottom="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+            <AutoCompleteTextView
+                android:id="@+id/deptautocompleted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/levelspin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select your level"
+            app:endIconMode="dropdown_menu"
+            app:startIconDrawable="@drawable/level"
+            app:startIconTint="@color/colorPrimaryDark"
+            android:layout_marginBottom="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+            <AutoCompleteTextView
+                android:id="@+id/levelautocompleted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailedit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            app:suffixText="/@gmail.com"
+            app:startIconDrawable="@drawable/email"
+            app:startIconTint="@color/colorPrimaryDark"
+            android:layout_marginBottom="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phoneedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone No"
+            app:prefixText="+88"
+            app:startIconDrawable="@drawable/phone_icon"
+            app:startIconTint="@color/colorPrimaryDark"
+            android:layout_marginBottom="5dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/upbtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

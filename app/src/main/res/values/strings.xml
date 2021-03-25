@@ -1,0 +1,54 @@
+<resources>
+    <array name="dept">
+        <item>Select your department</item>
+        <item>Civil</item>
+        <item>CSE</item>
+        <item>ME</item>
+        <item>EECE</item>
+        <item>NSE</item>
+        <item>AE</item>
+    </array>
+    <array name="voteevent">
+        <item>Select Voting Event</item>
+        <item>mistcaptain</item>
+        <item>csedepartment</item>
+        <item>osmanyhallcaptain</item>
+    </array>
+    <array name="Level">
+        <item>Select Level</item>
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+    </array>
+    <array name="vote">
+        <item>Select Event</item>
+        <item>MistCaptain</item>
+        <item>Osmanyhallcaptain</item>
+        <item>CseDepartment</item>
+        <item>Info</item>
+    </array>
+    <array name="postforcc">
+        <item>Select post</item>
+        <item>President</item>
+        <item>Treasurer</item>
+        <item>Publication</item>
+    </array>
+    <array name="post">
+        <item>Select post</item>
+        <item>captain</item>
+        <item>departmentcaptain</item>
+        <item>culturalcaptain</item>
+        <item>sportscaptain</item>
+    </array>
+    <string name="app_name">MSVS5</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="YES"><font color='black'>YES</font></string>
+    <string name="NO"><font color='black'>NO</font></string>
+    <string-array name="text">
+        <item>Welcome To</item>
+        <item>MIST SMART VOTING SYSTEM</item>
+    </string-array>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".osmanyhallcapt"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/maineventtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/bungee_regular"
+                android:text="Title"
+                android:textColor="#aeaeae"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/mainposttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/maineventtext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/bungee_regular"
+                android:text="Subtitle"
+                android:textColor="#aeaeae"
+                android:textSize="15sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/datetexta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Voting Date"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/mainposttext"
+                android:layout_marginTop="5dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/date"
+                    android:drawablePadding="10dp"
+                    android:enabled="false"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/bungee_regular"
+                    android:text=""/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/starttexta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Start Time"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/datetexta">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/time"
+                    android:drawablePadding="10dp"
+                    android:enabled="false"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/bungee_regular"
+                    android:text=""/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/finishtexta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Finish Time"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/starttexta">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/time"
+                    android:drawablePadding="10dp"
+                    android:enabled="false"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/bungee_regular"
+                    android:text=""/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/candidatepro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Candidate's Profile"
+                android:layout_gravity="center"
+                />
+
+            <Button
+                android:id="@+id/passwordbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/givevotebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Give Vote"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

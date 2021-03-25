@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:background="@color/colorPrimary">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rowcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardBackgroundColor="#455a64">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+
+            <ImageView
+                android:id="@+id/candimage"
+                android:layout_width="108dp"
+                android:layout_height="101dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/img" />
+
+            <TextView
+                android:id="@+id/teamone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textAlignment="center"
+                android:textColor="#aeaeae"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@+id/candimage"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/teamtwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:textAlignment="textStart"
+                android:textColor="#aeaeae"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/candimage"
+                android:layout_below="@+id/teamone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                />
+
+
+            <TextView
+                android:id="@+id/teamthree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dept"
+                android:textAlignment="textStart"
+                android:textColor="#aeaeae"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/candimage"
+                android:layout_below="@+id/teamtwo"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <Button
+                android:id="@+id/deletebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="delete"
+                android:layout_below="@+id/teamthree"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

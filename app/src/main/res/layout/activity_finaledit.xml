@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".finaledit"
+
+    android:background="@color/colorPrimaryDark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Edit USER Profile"
+        android:fontFamily="@font/bungee_regular"
+        android:textColor="@color/colorAccent"
+        android:textSize="22sp"
+        />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/finalnameedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edit Name"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/userprofile1"
+            android:drawablePadding="10dp"
+            android:enabled="true"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:fontFamily="@font/bungee_regular"
+            android:text=""/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/finalidedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edit ID"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/finalnameedit">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/id_icon"
+            android:drawablePadding="10dp"
+            android:enabled="true"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:fontFamily="@font/bungee_regular"
+            android:text=""/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/finalleveledit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edit level"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/finalidedit">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/level"
+            android:drawablePadding="10dp"
+            android:enabled="true"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:fontFamily="@font/bungee_regular"
+            android:text=""/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/finalphnedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edit Phone"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/finalleveledit">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/phone_icon"
+            android:drawablePadding="10dp"
+            android:enabled="true"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:fontFamily="@font/bungee_regular"
+            android:text=""/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/finalemailedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Edit Email"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/finalphnedit">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="10dp"
+            android:enabled="true"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:fontFamily="@font/bungee_regular"
+            android:text=""/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <Button
+        android:id="@+id/finaleditbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="edit"
+        android:layout_below="@+id/finalemailedit"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp" />
+    </RelativeLayout>
+</ScrollView>

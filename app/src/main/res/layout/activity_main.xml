@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimaryDark"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:padding="20dp">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/phone"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:transitionName="logoimage1"/>
+
+            <com.tomer.fadingtextview.FadingTextView
+                android:id="@+id/welcometxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:fontFamily="@font/bungee_regular"
+                android:layout_below="@+id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:textAlignment="center"
+                app:texts="@array/text"
+                app:timeout="500"
+                android:textColor="@color/colorAccent"
+                android:transitionName="logoname1"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+
+            <Button
+                android:id="@+id/userbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USER"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/adminbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADMIN"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/signinbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="scanCode"
+                android:text="Sign in"
+                android:layout_gravity="center"
+                />
+
+
+            <Button
+                android:id="@+id/fdbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reg"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

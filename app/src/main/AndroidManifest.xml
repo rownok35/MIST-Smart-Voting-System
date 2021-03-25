@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.msvs5">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".user_new"></activity>
+        <activity android:name=".admin_new" />
+        <activity android:name=".finaledit" />
+        <activity android:name=".Edituserlist" />
+        <activity android:name=".resultview" />
+        <activity android:name=".RegPage" />
+        <activity android:name=".approvecandidate" />
+        <activity android:name=".addcandidate" />
+        <activity android:name=".feedback" />
+        <activity android:name=".approve" />
+        <activity android:name=".detailedprofile" />
+        <activity android:name=".Profile_of_user" />
+        <activity android:name=".registration" />
+        <activity android:name=".givevote" />
+        <activity android:name=".candidateprofile" />
+        <activity android:name=".admin" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".osmanyhallcapt" />
+        <activity android:name=".user" />
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+</manifest>

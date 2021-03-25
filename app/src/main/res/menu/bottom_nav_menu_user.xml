@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottom_nav_event"
+        android:title="Events"
+        android:icon="@drawable/event"
+        app:cnb_backgroundColor="@color/colorPrimary"
+        />
+    <item
+        android:id="@+id/bottom_nav_result"
+        android:title="Result"
+        android:icon="@drawable/result"
+        app:cnb_backgroundColor="@color/colorPrimary"/>
+
+    <item
+        android:id="@+id/bottom_nav_profile"
+        android:title="Profile"
+        android:icon="@drawable/userprofile1"
+        app:cnb_backgroundColor="@color/colorPrimary"/>
+
+    <item
+        android:id="@+id/bottom_nav_candidate"
+        android:title="Candidate"
+        android:icon="@drawable/id_icon"
+        app:cnb_backgroundColor="@color/colorPrimary"/>
+
+</menu>

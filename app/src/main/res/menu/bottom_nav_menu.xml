@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bottom_nav_votevent"
+        android:title="Vote Event"
+        android:icon="@drawable/event"
+        app:cnb_backgroundColor="@color/colorPrimary"
+        />
+    <item
+        android:id="@+id/bottom_nav_edit"
+        android:title="Edit User"
+        android:icon="@drawable/edit"
+        app:cnb_backgroundColor="@color/colorPrimary"/>
+    <item
+        android:id="@+id/bottom_nav_history"
+        android:title="History"
+        android:icon="@drawable/result"
+        app:cnb_backgroundColor="@color/colorPrimary"/>
+
+    <item
+        android:id="@+id/bottom_nav_request"
+        android:title="User Request"
+        android:icon="@drawable/id_icon"
+        app:cnb_backgroundColor="@color/colorPrimary"/>
+
+</menu>

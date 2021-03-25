@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splash"
+    android:background="@color/Black"
+    android:orientation="vertical">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageView2"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/circle"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:transitionName="logoimage1"
+        android:cropToPadding="false"
+        android:adjustViewBounds="true"
+        />
+
+    <TextView
+        android:id="@+id/msvstxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MSVS"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="60sp"
+        android:fontFamily="@font/bangers_regular"
+        android:layout_gravity="center"
+        android:transitionName="logoname1"
+        />
+
+
+</LinearLayout>
